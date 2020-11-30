@@ -16,9 +16,7 @@
 </div>
 <div>
     <label> Publish Date </label>
-    <input type="date" name="publishDate"
-    value="<%= book.publishDate == null ? '' : book.publishDate.toISOString().substr(0,10) %>">
-    
+    <input type="date" name="publishDate">
 </div>
 <div>
     <label> Page Count </label>
@@ -27,7 +25,7 @@
 </div>
 <div>
     <label> Cover </label>
-    <input type="file" name="cover">   
+    <input type="file" name="cover" class="filepond">   
 </div>
 <div>
     <label> Description </label>
