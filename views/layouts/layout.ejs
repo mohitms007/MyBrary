@@ -6,17 +6,23 @@
     <title>MyLibrary</title>
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
     <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
     <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script defer src="/javascripts/fileUpload.js"></script>
 </head>
 <body>
-    <%- include('../partials/header.ejs') %> 
-    <br>
-    <%- body %>
-    <br>
-    <%- include('../partials/errorMessage.ejs') %>
+    <div class="container">
+        <%- include('../partials/header.ejs') %> 
+        <div class="inner-container">
+            <%- body %>
+            <%- include('../partials/errorMessage.ejs') %>
+        </div>
+    </div>
+  
 </body>
 </html>
