@@ -1,6 +1,6 @@
 <h2 class="page-header"><%= book.title %></h2>
 <div class="book-details">
-  <div>
+  <div class="show-detail">
     <img class="book-cover" src="<%= book.coverImagePath %>">
     <div class="book-details-btn-grid">
       <a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
@@ -8,6 +8,7 @@
       <a class="btn btn-primary book-details-author-button" href="/authors/<%= book.author.id %>">View Author</a>
     </div>
   </div>
+  
   <div class="book-details-grid">
     <div class="book-details-label">Author:</div>
     <div><%= book.author.name %></div>

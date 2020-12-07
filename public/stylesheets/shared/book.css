@@ -27,6 +27,9 @@
   .book-details {
     display: flex;
   }
+  .show-detail{
+      margin-right: 15px;
+  }
   
   .book-details-label {
     font-size: 1.2rem;
