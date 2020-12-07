@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
             createdAt: 'desc'
         }).limit(10).exec()
     } catch (error) {
-        console.log(error)
+       
         books = []
     }
     res.render('index', {
